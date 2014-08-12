@@ -46,7 +46,7 @@ function add_feed(list, return_list) {
           id: item.id,
           title:  item.title + '(' + item.region + ', ' + item.price + ', ' + item.type + ')',
           author: result.Detail.writer,
-          description: '지역 : ' + item.region + '<br/>종류 : ' + item.type + '<br/>가격 : ' + item.price + '<br/>성별 : ' + result.Detail.gender + '<br/>선금 : ' + result.Detail.deposit + '<br/>입주가능 날짜 : ' + result.Detail.midate + '<br/>Period : ' + result.Detail. period + '<br/>condition : ' + result.Detail.condition + '<br/>인터넷 유무 : ' + result.Detail.internet + '<br/>주소 : ' + result.Detail.address + '<br/>내용 : ' + result.Detail.comment,
+          description: '지역 : ' + item.region + '<br/>종류 : ' + item.type + '<br/>가격 : ' + item.price + '<br/>성별 : ' + result.Detail.gender + '<br/>선금 : ' + result.Detail.deposit + '<br/>입주가능 날짜 : ' + result.Detail.midate + '<br/>Period : ' + result.Detail. period + '<br/>condition : ' + result.Detail.condition + '<br/>인터넷 유무 : ' + result.Detail.internet + '<br/>주소 : ' + result.Detail.address + '<br/>기타 : ' + result.Detail.desc + '<br/>내용 : ' + result.Detail.comment,
           url: 'http://www.heykorean.com/hkboard/room/rent_view.asp?id='+item.id,
           date: item.date
         });
