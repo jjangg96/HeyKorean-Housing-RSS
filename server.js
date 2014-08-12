@@ -27,7 +27,7 @@ request('http://api.heykorean.com/mp/rent/ip_list.aspx?pagecount=400&page=1', fu
       }
       //sort by id
       //don't miss latest from premium posting's order
-      detail_url_list = underscore.sortBy(detail_url_list, function(item) { return item.id});
+      detail_url_list = underscore.sortBy(detail_url_list, function(item) { return item.id * -1});
       add_feed(detail_url_list, []);
       
       
